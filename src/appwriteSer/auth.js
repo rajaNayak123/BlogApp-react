@@ -23,7 +23,8 @@ export class AuthService {
             }
         }
         catch (err) {
-            throw err;
+            // throw err;
+            console.log("error at creatingAccount" + err)
         }
     }
 
