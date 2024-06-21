@@ -62,13 +62,13 @@ const Login = () => {
             <InputBox
               label="Password :"
               type="password"
-              placeholder ="Enter your password"
-              { ...register('password',{
+              placeholder="Enter your password"
+              {...register('password', {
                 required: true,
               })}
             />
             <Button type='submit' className='w-full'>
-                Login
+              Login
             </Button>
           </div>
         </Form>

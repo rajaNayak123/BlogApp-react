@@ -71,13 +71,13 @@ const PostForm = ({ post }) => {
     return (
         <form onSubmit={handleSubmit(submit)} className="flex flex-wrap">
             <div className="w-2/3 px-2">
-                <Input
+                <InputBox
                     label="title :"
                     placeholder="Title"
                     className="mb-4"
                     {...register("title", { required: true })}
                 />
-                <Input
+                <InputBox
                     label="slug :"
                     placeholder="Slug"
                     className="mb-4"
@@ -89,7 +89,7 @@ const PostForm = ({ post }) => {
                 <RTE label="Content :" name="content" control={control} defaultValue={getValues("content")} />
             </div>
             <div className="w-1/3 px-2">
-                <Input
+                <InputBox
                     label="Featured Image :"
                     type="file"
                     className="mb-4"
